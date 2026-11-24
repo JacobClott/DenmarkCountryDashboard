@@ -6,7 +6,7 @@ Prints PASS/FAIL per metric with the latest value, date range, source and any fa
 import sys
 from datetime import datetime
 
-from dkdata import sources as S
+import dk_sources as S
 
 BOUNDS = {  # rough sanity ranges for the latest value
     "gdp": (-15, 15), "core": (-2, 15), "yield": (-1, 12), "debt": (10, 80),
